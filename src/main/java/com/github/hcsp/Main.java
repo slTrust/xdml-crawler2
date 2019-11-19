@@ -61,7 +61,7 @@ public class Main {
         }
     }
 
-    private static Document httpGetAndParseHtml(String link){
+    private static Document httpGetAndParseHtml(String link) throws IOException {
         if(link.startsWith("//")){
             link = "https:" + link;
             System.out.println("处理后的link:"+link);
